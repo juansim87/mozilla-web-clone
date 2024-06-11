@@ -138,7 +138,7 @@ button {
 	padding: 10px;
 	box-shadow: 0 0 1px 1px rgba(29, 17, 51, 0.04),
 		0 0 3px 2px rgba(9, 32, 77, 0.12), 0 0 2px -3px rgba(29, 17, 51, 0.12);
-    align-items: center;
+	align-items: center;
 }
 
 .nav__menu {
@@ -147,8 +147,8 @@ button {
 }
 
 .nav__content {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .nav__logo img {
@@ -200,13 +200,21 @@ button {
 }
 
 .top__title {
-	font-size: 3.375rem;
+	width: 920px;
+}
+
+.top__title h1{
+	font-size: 54px;
 	text-align: center;
 	font-weight: 700;
 }
 
 .top__description {
-	font-size: 2.1rem;
+	width: 880px;
+}
+
+.top__description p {
+	font-size: 30px;
 	text-align: center;
 	line-height: 1.4;
 }
@@ -326,13 +334,12 @@ hr {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
-	gap: 100px;
+	justify-content: center;
+	gap: 80px;
 }
 
 .entry__img {
-	width: 480px;
-	max-width: 60%;
+	width: 536px;
 }
 
 .entry__img img {
@@ -342,20 +349,19 @@ hr {
 .entry__texts {
 	display: flex;
 	flex-direction: column;
-	max-width: 40%;
+	width: 536px;
 	gap: 20px;
 }
 
 .entry__title {
-	font-size: 2.75rem;
+	font-size: 38px;
 	font-weight: 700;
 }
 
 .entry__text {
 	display: flex;
 	font-family: Inter;
-	font-size: 1.3rem;
-	min-width: 50%;
+	font-size: 20px;
 	line-height: 2.2rem;
 }
 
@@ -398,17 +404,17 @@ hr {
 }
 
 .story {
-	background-color: #e0e0e6;
+	background-color: #f1f1f1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 25px;
-	padding-top: 50px;
+	padding-top: 80px;
 }
 
 .story__title {
-	font-size: 2.75rem;
+	font-size: 42px;
 	text-align: center;
 	font-weight: 700;
 }
@@ -417,10 +423,9 @@ hr {
 	display: flex;
 	flex-direction: column;
 	font-family: Inter;
-	font-size: 1.3rem;
-	min-width: 50%;
-	max-width: 75%;
-	line-height: 2.2rem;
+	font-size: 20px;
+	max-width: 928px;
+	line-height: 2rem;
 	gap: 20px;
 }
 
@@ -446,7 +451,7 @@ hr {
 }
 
 .blog__btn {
-  align-self: flex-start;
+	align-self: flex-start;
 }
 
 .info-btn:hover {
@@ -458,4 +463,10 @@ hr {
 .footer {
 	background-color: #000000;
 	color: white;
+}
+
+@media only screen and (max-width: 480px) {
+	body {
+		background-color: #b39931;
+	}
 }
