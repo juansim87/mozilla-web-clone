@@ -36,28 +36,31 @@
 			</nav>
 		</header>
 		<main class="main">
-			<section class="top">
+			<section id="top">
 				<div class="top__title">
 					<h1>Impulsado por una misión. Impulsado por la gente.</h1>
 				</div>
 				<div class="top__description">
-				<p>
-					No somos una empresa de tecnología normal. Las cosas que creamos
-					priorizan a las personas y su privacidad por encima de las ganancias.
-					Existimos para hacer de Internet un lugar más saludable y feliz para
-					todos.
-				</p></div>
+					<p>
+						No somos una empresa de tecnología normal. Las cosas que creamos
+						priorizan a las personas y su privacidad por encima de las
+						ganancias. Existimos para hacer de Internet un lugar más saludable y
+						feliz para todos.
+					</p>
+				</div>
 			</section>
 			<section class="quote">
-				<p class="quote__text">
-					“La salud de Internet y la vida en línea es nuestra razón de ser.”
-				</p>
-				<p class="quote__author">
-					Mitchell Baker, presidenta ejecutiva de la junta directiva, Mozilla
-					Foundation
-				</p>
+				<div>
+					<p class="quote__text">
+						“La salud de Internet y la vida en línea es nuestra razón de ser.”
+					</p>
+					<p class="quote__author">
+						Mitchell Baker, presidenta ejecutiva de la junta directiva, Mozilla
+						Foundation
+					</p>
+				</div>
 			</section>
-			<section class="services">
+			<section id="services">
 				<div>
 					<h2 class="services__title">
 						Mozilla desarrolla productos que respetan la privacidad
@@ -124,15 +127,17 @@
 				</div>
 			</section>
 			<section class="quote">
-				<p class="quote__text">
-					“Mozilla está apostando por mostrarle al mundo que se puede hacer
-					negocio con una IA fiable. Eso incluye poner aspectos como los
-					derechos humanos, la protección de datos y la transparencia en el
-					centro del funcionamiento de estos sistemas complejos.”
-				</p>
-				<p class="quote__author">Politico</p>
+				<div>
+					<p class="quote__text">
+						“Mozilla está apostando por mostrarle al mundo que se puede hacer
+						negocio con una IA fiable. Eso incluye poner aspectos como los
+						derechos humanos, la protección de datos y la transparencia en el
+						centro del funcionamiento de estos sistemas complejos.”
+					</p>
+					<p class="quote__author">Politico</p>
+				</div>
 			</section>
-			<section class="blog">
+			<section id="blog">
 				<article class="blog__entry">
 					<div class="entry__img">
 						<img src="./images/party.png" alt="fiesta en la sede de Mozilla" />
@@ -173,7 +178,7 @@
 					</div>
 				</article>
 			</section>
-			<section class="vpn__info">
+			<section id="vpn-info">
 				<div class="vpn__box">
 					<img
 						src="./images/digital.svg"
@@ -189,7 +194,7 @@
 					<button class="info-btn">Consigue Mozilla VPN</button>
 				</div>
 			</section>
-			<section class="story">
+			<section id="story">
 				<h2 class="story__title">
 					Esa vez que regalamos nuestro código fuente…
 				</h2>
@@ -218,43 +223,40 @@
 					<img src="./images/dino.svg" alt="logo de Mozilla Foundation" />
 				</div>
 			</section>
-			<section class="news">
-				<div>
-					<h2 class="news__title">Recibe (buenas) noticias de Mozilla</h2>
-					<p class="news__text">
+			<section id="newsletter">
+				<div class="newsletter__info">
+					<h2>Recibe (buenas) noticias de Mozilla</h2>
+					<p>
 						Recibe noticias y consejos de Mozilla para mantenerte seguro e
 						informado sobre todo lo que hace que la web sea un lugar más
 						saludable.
 					</p>
 				</div>
-				<div>
+				<div class="newsletter__form">
 					<form action="#">
 						<label for="email">Tu dirección de correo electrónico:</label>
-						<br />
+						
 						<input type="email" placeholder="tunombre@example.com" id="email" />
-						<br />
+						
 						<button type="submit" class="info-btn">Suscríbete ya</button>
-						<br />
-						<small>
-							Solo te enviaremos información relacionada con Mozilla
-						</small>
+						
 					</form>
+					<small>Solo te enviaremos información relacionada con Mozilla</small>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<section>
-				<div>
+			<section id="about-us">
+				<div class="about-us__image">
 					<img
 						src="./images/mozilla-white.png"
 						alt="logo de mozilla en color invertido"
 						width="112"
 						height="32"
-						class="footer__logo"
 					/>
 				</div>
 				<div>
-					<div class="footer__menu">
+					<div>
 						<h4>Empresa</h4>
 						<div>
 							<a href="#">Manifiesto de Mozilla</a>

@@ -190,7 +190,7 @@ button {
 	font-family: "Zilla Slab", serif;
 }
 
-.top {
+#top {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -203,7 +203,7 @@ button {
 	width: 920px;
 }
 
-.top__title h1{
+.top__title h1 {
 	font-size: 54px;
 	text-align: center;
 	font-weight: 700;
@@ -220,6 +220,7 @@ button {
 }
 
 .quote {
+	width: 100%;
 	background-image: linear-gradient(
 		90deg,
 		#e8e7f2,
@@ -244,20 +245,30 @@ button {
 	padding: 50px 0px;
 }
 
+.quote div {
+	max-width: 880px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
 .quote__text {
-	font-size: 1.3rem;
+	font-size: 20px;
 	font-weight: 400;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	line-height: 26px;
 }
 
 .quote__author {
-	font-size: 1.125rem;
+	font-size: 18px;
 	font-weight: 700;
 }
 
-.services {
+#services {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -317,7 +328,7 @@ button {
 	transition: background-color 0.1s, box-shadow 0.1s, color 0.1s;
 }
 
-.blog {
+#blog {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -365,7 +376,7 @@ hr {
 	line-height: 2.2rem;
 }
 
-.vpn__info {
+#vpn-info {
 	width: 90%;
 	margin: 50px auto;
 }
@@ -403,7 +414,7 @@ hr {
 	color: #7542e5;
 }
 
-.story {
+#story {
 	background-color: #f1f1f1;
 	display: flex;
 	flex-direction: column;
@@ -423,9 +434,9 @@ hr {
 	display: flex;
 	flex-direction: column;
 	font-family: Inter;
-	font-size: 20px;
+	font-size: 18px;
 	max-width: 928px;
-	line-height: 2rem;
+	line-height: 28px;
 	gap: 20px;
 }
 
@@ -460,10 +471,82 @@ hr {
 	transition: background-color 0.1s, box-shadow 0.1s, color 0.1s;
 }
 
+#newsletter {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+	padding: 48px 64px;
+}
+
+.newsletter__info {
+	max-width: 408px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.newsletter__info h2 {
+	font-size: 38px;
+	font-weight: 700;
+}
+
+.newsletter__info p {
+	font-family: Inter;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.newsletter__form {
+	width: 456px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.newsletter__form form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 12px;
+}
+
+.newsletter__form form label {
+	font-family: Inter, X-LocaleSpecific, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.newsletter__form form input {
+	font-family: Inter;
+	padding: 8px ;
+	border-radius: 3px solid #9595a2;
+}
+
+.newsletter__form form button {
+	width: 100%;
+	padding: 8px;
+}
+
+.newsletter__form small {
+	font-family: Inter;
+	font-size: 12px;
+}
+
 .footer {
+	width: 100%;
 	background-color: #000000;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 24px;
 }
+
+
 
 @media only screen and (max-width: 480px) {
 	body {
