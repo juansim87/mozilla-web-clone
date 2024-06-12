@@ -130,15 +130,28 @@ a {
 button {
 	cursor: pointer;
 }
+
+.body-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+}
+
 .nav {
+	width: 100%;
 	display: flex;
 	font-family: "Inter", sans-serif;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 	border-bottom: solid #e0e0e6 1px;
 	padding: 10px;
-	box-shadow: 0 0 1px 1px rgba(29, 17, 51, 0.04),
-		0 0 3px 2px rgba(9, 32, 77, 0.12), 0 0 2px -3px rgba(29, 17, 51, 0.12);
-	align-items: center;
+	box-shadow: 0 0 2px -3px rgba(29, 17, 51, 0.12);
+	gap: 100px;
 }
 
 .nav__menu {
@@ -146,9 +159,14 @@ button {
 	align-items: center;
 }
 
-.nav__content {
-	display: flex;
+#nav__content-desktop {
+	display: inherit;
 	align-items: center;
+	gap: 100px;
+}
+
+#nav__content-mobile {
+	display: none;
 }
 
 .nav__logo img {
@@ -187,6 +205,11 @@ button {
 }
 
 .main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	font-family: "Zilla Slab", serif;
 }
 
@@ -266,32 +289,37 @@ button {
 .quote__author {
 	font-size: 18px;
 	font-weight: 700;
+	text-align: center;
+	line-height: 32px;
 }
 
 #services {
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 96px 80px;
+	padding: 96px 0;
 	gap: 20px;
 }
 
 .services__title {
-	font-size: 2.75rem;
+	font-size: 44px;
 	text-align: center;
 	font-weight: 700;
 }
 
 .services__products {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	gap: 20px;
+	gap: 40px;
 }
 
 .products__item {
+	width: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -317,9 +345,9 @@ button {
 	border-color: #000000;
 	border-radius: 5px;
 	border-width: medium;
-	font-size: 1.2rem;
+	font-size: 18px;
 	font-weight: bolder;
-	padding: 6px 24px;
+	padding: 8px 20px;
 	transition: background-color 0.1s, box-shadow 0.1s, color 0.1s;
 }
 
@@ -332,25 +360,29 @@ button {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
-	justify-content: space-evenly;
-	padding: 50px 80px;
-}
-
-hr {
-	border-width: 1px;
-	margin: 64px 0;
+	justify-content: center;
+	padding: 40px 12px;
 }
 
 .blog__entry {
+	width: 1200px;
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	gap: 80px;
+	padding-top: 20px;
+}
+
+.border-bottom {
+	padding-bottom: 40px;
+	border-bottom: solid 1px rgb(219, 219, 219);
 }
 
 .entry__img {
-	width: 536px;
+	width: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .entry__img img {
@@ -358,9 +390,9 @@ hr {
 }
 
 .entry__texts {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	width: 536px;
 	gap: 20px;
 }
 
@@ -373,22 +405,28 @@ hr {
 	display: flex;
 	font-family: Inter;
 	font-size: 20px;
-	line-height: 2.2rem;
+	line-height: 28px;
 }
 
 #vpn-info {
-	width: 90%;
-	margin: 50px auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+	padding-bottom: 80px;
 }
 
 .vpn__box {
+	width: 1248px;
 	background-color: #e7dfff;
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
-	padding: 24px 48px;
-	gap: 20px;
+	justify-content: center;
+	padding: 24px 40px;
+	gap: 144px;
 }
 
 .vpn__text {
@@ -401,12 +439,12 @@ hr {
 	font-family: Inter;
 	color: #7542e5;
 	text-transform: uppercase;
-	font-size: 1.25rem;
+	font-size: 18px;
 	font-weight: 700;
 }
 
 .vpn__description {
-	font-size: 1.75rem;
+	font-size: 24px;
 	font-weight: 700;
 }
 
@@ -457,7 +495,7 @@ hr {
 	border-color: #000000;
 	border-radius: 5px;
 	border-width: medium;
-	font-size: 1.2rem;
+	font-size: 16px;
 	font-weight: bolder;
 	padding: 6px 24px;
 }
@@ -523,7 +561,7 @@ hr {
 
 .newsletter__form form input {
 	font-family: Inter;
-	padding: 8px ;
+	padding: 8px;
 	border-radius: 3px solid #9595a2;
 }
 
@@ -557,7 +595,191 @@ hr {
 }
 
 @media only screen and (max-width: 480px) {
-	body {
-		background-color: #b39931;
+	.body-content {
+		max-width: 480px;
+	}
+
+	.nav {
+		padding: 16px 0;
+		gap: 284px;
+		justify-content: center;
+	}
+
+	#nav__content-desktop {
+		display: none;
+	}
+
+	#nav__content-mobile {
+		display: inherit;
+		justify-content: space-between;
+	}
+
+	#top {
+		padding: 40px 20px;
+		gap: 12px;
+	}
+
+	.top__title {
+		width: 100%;
+	}
+
+	.top__title h1 {
+		font-size: 28px;
+	}
+
+	.top__description {
+		width: 100%;
+	}
+
+	.top__description p {
+		font-size: 15px;
+	}
+
+	.quote {
+		width: 100%;
+	}
+
+	.quote div {
+		width: 75%;
+	}
+
+	.quote__text {
+		font-size: 18px;
+	}
+
+	.quote__author {
+		line-height: 28px;
+	}
+
+	#services {
+		padding-top: 40px;
+		padding-bottom: 100px;
+		gap: 60px;
+	}
+
+	.services__title {
+		font-size: 28px;
+	}
+
+	.services__products {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+	}
+
+	.products__item {
+		gap: 32px;
+	}
+
+	.products__item img {
+		height: 40px;
+	}
+
+	.products__item h3 {
+		font-size: 16px;
+	}
+
+	.products__item-btn {
+		font-size: 14px;
+	}
+
+	#blog {
+		width: 480px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+	}
+
+	.blog__entry {
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.entry__img {
+		width: 440px;
+	}
+
+	.entry__img img {
+		width: 100%;
+	}
+
+	.entry__title {
+		font-size: 28px;
+		text-align: center;
+	}
+
+	.entry__texts {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.blog__entry {
+		width: 90%;
+	}
+
+	.entry__text {
+		font-size: 16px;
+		text-align: center;
+		line-height: 24px;
+	}
+
+	.blog__btn {
+		align-self: center;
+	}
+
+	.mobile-order-invert {
+		order: 1;
+	}
+
+	#story {
+		width: 100%;
+	}
+
+	.story__texts {
+		width: 100%;
+	}
+
+	#vpn-info {
+		width: 480px;
+		padding-top: 20px;
+		padding-bottom: 80px;
+	}
+
+	.vpn__box {
+		width: 90%;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px 0;
+	}
+
+	.vpn__text {
+		width: 70%;
+	}
+
+	.vpn__title {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.vpn__description {
+		text-align: center;
+		font-size: 24px;
+	}
+
+	#newsletter {
+		width: 100%;
+		padding: 0;
+	}
+
+	.footer {
+		padding: 0;
 	}
 }
