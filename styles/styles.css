@@ -300,7 +300,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 96px 0;
-	gap: 20px;
+	gap: 52px;
 }
 
 .services__title {
@@ -310,12 +310,14 @@ header {
 }
 
 .services__products {
-	width: 100%;
+	width: 90%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	gap: 40px;
+	padding-bottom: 40px;
+
 }
 
 .products__item {
@@ -325,7 +327,7 @@ header {
 	align-items: center;
 	gap: 20px;
 	width: 300px;
-	padding: 0 40px;
+	padding: 0 40px 20px 40px;
 }
 
 .products__item img {
@@ -379,7 +381,7 @@ header {
 }
 
 .entry__img {
-	width: 1000px;
+	width: 612px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -390,7 +392,7 @@ header {
 }
 
 .entry__texts {
-	width: 100%;
+	width: 612px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -484,6 +486,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 20px;
 }
 
 .story__texts p {
