@@ -135,7 +135,8 @@ button {
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	min-width: 320px;
 }
 
@@ -170,8 +171,8 @@ header {
 
 #nav__content-desktop {
 	display: flex;
-    flex: 1;
-    justify-content: space-between;
+	flex: 1;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -232,7 +233,6 @@ header {
 }
 
 .top__title {
-
 }
 
 .top__title h1 {
@@ -242,7 +242,6 @@ header {
 }
 
 .top__description {
-
 }
 
 .top__description p {
@@ -353,7 +352,7 @@ header {
 	color: #000000;
 	border: 2px solid black;
 	border-radius: 5px;
-	
+
 	font-size: 18px;
 	font-weight: bolder;
 	padding: 8px 20px;
@@ -431,12 +430,12 @@ header {
 
 .vpn__box {
 	background-color: #e7dfff;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 40px;
-    gap: 20px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 40px;
+	gap: 20px;
 }
 
 .vpn__text {
@@ -622,11 +621,11 @@ header {
 	border-radius: 3px solid #b1b1b3;
 }
 
-.about-us__image {
+.about-us__logo {
 	width: 112px;
 }
 
-.about-us__image img {
+.about-us__logo img {
 	width: 100%;
 }
 
@@ -646,12 +645,12 @@ header {
 }
 
 .menu__column {
-	width: 228px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 20px;
+	flex: 1;
 }
 
 .menu__column h4 {
@@ -665,6 +664,7 @@ header {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 12px;
+	white-space: nowrap;
 }
 
 .column__links a {
@@ -673,21 +673,16 @@ header {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-	
-  }
-  
-  /* Dispositivos medianos (tabletas en orientación horizontal, 768px y más) */
-  @media only screen and (min-width: 481px) and (max-width: 991px) {
-	
+}
+
+/* Dispositivos medianos (tabletas en orientación horizontal, 768px y más) */
+@media only screen and (min-width: 481px) and (max-width: 991px) {
 	.nav {
 		flex-wrap: wrap;
-		
 	}
-  }
+}
 
 @media only screen and (max-width: 480px) {
-	
-
 	.nav {
 		padding: 16px 10px;
 		justify-content: space-between;
